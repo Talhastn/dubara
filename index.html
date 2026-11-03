@@ -3,18 +3,158 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dubara</title>
-<link rel="stylesheet" href="stil.css">
+<title>Dubara: Yetenekli Tavla</title>
+<meta name="description" content="Klasik Türk tavlası, yeteneklerle. Öfkeni doldur, zarı değiştir, rakibini yen. Online Dereceli maçlar, arkadaşla, bota karşı ve aynı telefonda.">
+<meta name="theme-color" content="#1b1b1e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dubara">
+<meta property="og:title" content="Dubara: Yetenekli Tavla">
+<meta property="og:description" content="Klasik Türk tavlası, yeteneklerle. Öfkeni doldur, zarı değiştir, rakibini yen.">
+<meta property="og:url" content="https://dubaragame.com/">
+<meta property="og:locale" content="tr_TR">
+<link rel="canonical" href="https://dubaragame.com/">
+<link rel="preload" href="yazi/Unbounded-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="ana.css">
 </head>
 <body>
+
+<header class="kap ust">
+  <a class="marka" href="/"><span class="zar-isareti" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Dubara</a>
+  <nav>
+    <a href="#ofke">Öfke</a>
+    <a href="#yetenekler">Yetenekler</a>
+    <a href="#modlar">Nasıl oynanır</a>
+  </nav>
+</header>
+
 <main>
-<h1>Dubara</h1>
-<p class="tarih">Skill'li Türk tavlası / Turkish backgammon with skills</p>
-<ul>
-  <li><a href="gizlilik/">Gizlilik Politikası / Privacy Policy</a></li>
-  <li><a href="hesap-silme/">Hesap silme / Account deletion</a></li>
-</ul>
-<footer>İletişim / Contact: <a href="mailto:dubaragame@gmail.com">dubaragame@gmail.com</a></footer>
+
+<section class="giris">
+  <div class="kap">
+    <h1>Türk tavlası,<br><span>yeteneklerle.</span></h1>
+    <p class="alt">Kurallar bildiğin gibi. Fark şu: zar sana küsünce elin boş kalmaz. Öfkeni doldur, zarı değiştir, rakibini yen.</p>
+    <a class="play" aria-disabled="true">
+      <svg class="ok" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.5 2.6c-.3.3-.5.8-.5 1.4v16c0 .6.2 1.1.5 1.4l9-9.4-9-9.4zm10.2 10.6 2.7 2.8-11.5 6.5 8.8-9.3zm4.5-2.6c.9.5.9 1.9 0 2.4l-2.6 1.5-3-3 3-3 2.6 1.6v.5zM5.9 1.5l11.5 6.5-2.7 2.8-8.8-9.3z"/></svg>
+      <span>Yakında Google Play'de<small>Şu an kapalı testte</small></span>
+    </a>
+    <div class="kartlar" aria-hidden="true">
+      <img src="img/yetenek/guess.png" alt="">
+      <img src="img/yetenek/mirror.png" alt="">
+      <img src="img/yetenek/entry.png" alt="">
+      <img src="img/yetenek/thirdDie.png" alt="">
+      <img src="img/yetenek/reroll.png" alt="">
+      <img src="img/yetenek/shield.png" alt="">
+      <img src="img/yetenek/freeze.png" alt="">
+      <img src="img/yetenek/sweep.png" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="bolum" id="ofke">
+  <div class="kap ofke">
+    <div>
+      <h2>Şansın dönünce güçlenirsin</h2>
+      <p class="aciklama">Kötü giden oyun, geri dönüşün yakıtına dönüşür. Başına kötü bir şey geldikçe Öfke barın dolar; dolan Öfke ile yetenek kullanırsın.</p>
+      <ul>
+        <li><b>Taşın kırıldı</b> mı? Öfke kazanırsın.</li>
+        <li><b>Kapıya dayanıp oynayamadın</b> mı? Öfke kazanırsın.</li>
+        <li><b>Rakip düşeş attı</b> mı? Öfke kazanırsın.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="bar-kutu">
+        <div class="bar-etiket"><span>Senin Öfken</span><span>dolmak üzere</span></div>
+        <div class="bar"><i></i></div>
+      </div>
+      <div class="bar-kutu rakip">
+        <div class="bar-etiket"><span>Rakibin Öfkesi</span><span>herkes görür</span></div>
+        <div class="bar"><i></i></div>
+      </div>
+      <p class="bar-not">İki barın da ekranda açık: rakibinin elinde ne olduğunu görür, ona göre oynarsın.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bolum" id="yetenekler">
+  <div class="kap">
+    <h2>8 yetenek, her turda yeni bir karar</h2>
+    <p class="aciklama">Herkesin elinde aynı sekiz yetenek var. Hangisini ne zaman kullanacağın senin kararın.</p>
+
+    <p class="grup-baslik">Zardan önce</p>
+    <div class="yetenekler">
+      <div class="yetenek"><img src="img/yetenek/guess.png" alt=""><h3>Tahmin</h3><p>Bir sayı seç; zar tutarsa Öfke kazan.</p></div>
+      <div class="yetenek"><img src="img/yetenek/mirror.png" alt=""><h3>Ayna</h3><p>Rakibin son attığı zarları kendin oyna.</p></div>
+      <div class="yetenek"><img src="img/yetenek/entry.png" alt=""><h3>Giriş</h3><p>Bardaki taşını zarsız, istediğin açık haneden sok.</p></div>
+      <div class="yetenek"><img src="img/yetenek/thirdDie.png" alt=""><h3>Üçüncü Zar</h3><p>Üç zar at, üçünü de oyna.</p></div>
+    </div>
+
+    <p class="grup-baslik">Zardan sonra</p>
+    <div class="yetenekler">
+      <div class="yetenek"><img src="img/yetenek/reroll.png" alt=""><h3>Yeniden At</h3><p>Beğenmediğin zarı bir kez daha at.</p></div>
+      <div class="yetenek"><img src="img/yetenek/shield.png" alt=""><h3>Kalkan</h3><p>Açıktaki taşını bir tur kırılmaz yap.</p></div>
+      <div class="yetenek"><img src="img/yetenek/freeze.png" alt=""><h3>Dondur</h3><p>Rakibin açık taşını bir tur yerinde tut.</p></div>
+      <div class="yetenek"><img src="img/yetenek/sweep.png" alt=""><h3>Süpürme</h3><p>Yolun üstündeki ilk açık rakip taşını da kır.</p></div>
+    </div>
+
+    <div class="adil">
+      <div><b>Yetenekler satın alınmaz</b><span>Yalnızca oyunda kazandığın Öfke ile kullanılır. Kazanan, parayı değil kararı iyi veren olur.</span></div>
+      <div><b>Adil zar</b><span>Online maçlarda zar sunucuda atılır. Her yetenek iki oyuncuya da açıkça gösterilir.</span></div>
+      <div><b>Zorunlu reklam yok</b><span>Reklamı yalnızca sen istersen, ödül için izlersin.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="bolum" id="modlar">
+  <div class="kap">
+    <h2>Nasıl oynamak istersen</h2>
+    <p class="aciklama">Hesap açmana gerek yok: oyun seni misafir olarak başlatır. İstersen Google Play Games ile bağlanır, telefon değiştirsen de hesabını korursun.</p>
+    <div class="modlar">
+      <div class="mod"><div class="sembol">01</div><h3>Dereceli</h3><p>Rastgele bir rakiple eşleş, liglerde yüksel.</p></div>
+      <div class="mod"><div class="sembol">02</div><h3>Arkadaşla</h3><p>Arkadaşını kullanıcı adıyla ya da davet bağlantısıyla ekle, maça çağır.</p></div>
+      <div class="mod"><div class="sembol">03</div><h3>Bota karşı</h3><p>İnternet olmadan, kendi hızında pratik yap.</p></div>
+      <div class="mod"><div class="sembol">04</div><h3>Aynı telefonda</h3><p>Yanındakiyle tek telefonda karşılıklı oyna.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bolum" id="ligler">
+  <div class="kap">
+    <h2>Bronz'dan Düşeş'e</h2>
+    <p class="aciklama">Dereceli maçlarla tırman. Her yeni kademe, o lige özel tahta, taş ve zar parçalarının kilidini açar.</p>
+    <div class="ligler">
+      <span class="lig" style="--c:#d9955a"><i></i>Bronz</span>
+      <span class="lig" style="--c:#c3ccd6"><i></i>Gümüş</span>
+      <span class="lig" style="--c:#e2b54a"><i></i>Altın</span>
+      <span class="lig" style="--c:#8fd3c0"><i></i>Platin</span>
+      <span class="lig" style="--c:#7fdcf0"><i></i>Elmas</span>
+      <span class="lig" style="--c:#b99af2"><i></i>Usta</span>
+      <span class="lig zirve" style="--c:#f07a8e"><i></i>Düşeş</span>
+    </div>
+  </div>
+</section>
+
+<section class="son">
+  <div class="kap">
+    <h2>Zar senin, karar senin.</h2>
+    <a class="play" aria-disabled="true">
+      <svg class="ok" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.5 2.6c-.3.3-.5.8-.5 1.4v16c0 .6.2 1.1.5 1.4l9-9.4-9-9.4zm10.2 10.6 2.7 2.8-11.5 6.5 8.8-9.3zm4.5-2.6c.9.5.9 1.9 0 2.4l-2.6 1.5-3-3 3-3 2.6 1.6v.5zM5.9 1.5l11.5 6.5-2.7 2.8-8.8-9.3z"/></svg>
+      <span>Yakında Google Play'de<small>Şu an kapalı testte</small></span>
+    </a>
+  </div>
+</section>
+
 </main>
+
+<footer class="alt-bilgi">
+  <div class="kap">
+    <span>© 2026 Dubara</span>
+    <nav>
+      <a href="gizlilik/">Gizlilik Politikası</a>
+      <a href="hesap-silme/">Hesap silme</a>
+      <a href="mailto:dubaragame@gmail.com">dubaragame@gmail.com</a>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>
